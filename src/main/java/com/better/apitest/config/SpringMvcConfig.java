@@ -21,6 +21,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 //        配置拦截地址和不拦截地址
-        registry.addInterceptor(loginInterceptor).addPathPatterns("/**").excludePathPatterns("/user/login","/user/register","/error");
+        registry.addInterceptor(loginInterceptor).addPathPatterns("/**")
+                .excludePathPatterns("/user/login","/user/register","/error","/test/hello");
     }
 }
