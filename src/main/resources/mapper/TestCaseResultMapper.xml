@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.better.apitest.mapper.TestCaseResultMapper">
+  <resultMap id="BaseResultMap" type="com.better.apitest.domain.TestCaseResult">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="test_case_id" jdbcType="BIGINT" property="testCaseId" />
+    <result column="collection_result_id" jdbcType="BIGINT" property="collectionResultId" />
+    <result column="environment_id" jdbcType="BIGINT" property="environmentId" />
+    <result column="run_by" jdbcType="BIGINT" property="runBy" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="success" jdbcType="BIT" property="success" />
+    <result column="total_assertions" jdbcType="INTEGER" property="totalAssertions" />
+    <result column="success_assertions" jdbcType="INTEGER" property="successAssertions" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, test_case_id, collection_result_id, environment_id, run_by, create_date, success, 
+    total_assertions, success_assertions
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_test_case_result
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="selectByTestCaseId" parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_test_case_result
+    where test_case_id in <foreach collection="list" item="testCaseId" separator="," open="(" close=")">#{testCaseId,jdbcType=BIGINT}</foreach>
+    order by create_date desc
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_test_case_result
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.better.apitest.domain.TestCaseResult">
+    insert into sys_test_case_result (id, test_case_id, collection_result_id, 
+      environment_id, run_by, create_date, 
+      success, total_assertions, success_assertions
+      )
+    values (#{id,jdbcType=BIGINT}, #{testCaseId,jdbcType=BIGINT}, #{collectionResultId,jdbcType=BIGINT}, 
+      #{environmentId,jdbcType=BIGINT}, #{runBy,jdbcType=BIGINT}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{success,jdbcType=BIT}, #{totalAssertions,jdbcType=INTEGER}, #{successAssertions,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.better.apitest.domain.TestCaseResult">
+    insert into sys_test_case_result
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="testCaseId != null">
+        test_case_id,
+      </if>
+      <if test="collectionResultId != null">
+        collection_result_id,
+      </if>
+      <if test="environmentId != null">
+        environment_id,
+      </if>
+      <if test="runBy != null">
+        run_by,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="success != null">
+        success,
+      </if>
+      <if test="totalAssertions != null">
+        total_assertions,
+      </if>
+      <if test="successAssertions != null">
+        success_assertions,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="testCaseId != null">
+        #{testCaseId,jdbcType=BIGINT},
+      </if>
+      <if test="collectionResultId != null">
+        #{collectionResultId,jdbcType=BIGINT},
+      </if>
+      <if test="environmentId != null">
+        #{environmentId,jdbcType=BIGINT},
+      </if>
+      <if test="runBy != null">
+        #{runBy,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="success != null">
+        #{success,jdbcType=BIT},
+      </if>
+      <if test="totalAssertions != null">
+        #{totalAssertions,jdbcType=INTEGER},
+      </if>
+      <if test="successAssertions != null">
+        #{successAssertions,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.better.apitest.domain.TestCaseResult">
+    update sys_test_case_result
+    <set>
+      <if test="testCaseId != null">
+        test_case_id = #{testCaseId,jdbcType=BIGINT},
+      </if>
+      <if test="collectionResultId != null">
+        collection_result_id = #{collectionResultId,jdbcType=BIGINT},
+      </if>
+      <if test="environmentId != null">
+        environment_id = #{environmentId,jdbcType=BIGINT},
+      </if>
+      <if test="runBy != null">
+        run_by = #{runBy,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="success != null">
+        success = #{success,jdbcType=BIT},
+      </if>
+      <if test="totalAssertions != null">
+        total_assertions = #{totalAssertions,jdbcType=INTEGER},
+      </if>
+      <if test="successAssertions != null">
+        success_assertions = #{successAssertions,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.better.apitest.domain.TestCaseResult">
+    update sys_test_case_result
+    set test_case_id = #{testCaseId,jdbcType=BIGINT},
+      collection_result_id = #{collectionResultId,jdbcType=BIGINT},
+      environment_id = #{environmentId,jdbcType=BIGINT},
+      run_by = #{runBy,jdbcType=BIGINT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      success = #{success,jdbcType=BIT},
+      total_assertions = #{totalAssertions,jdbcType=INTEGER},
+      success_assertions = #{successAssertions,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

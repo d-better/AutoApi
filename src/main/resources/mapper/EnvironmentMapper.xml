@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.better.apitest.mapper.EnvironmentMapper">
+  <resultMap id="BaseResultMap" type="com.better.apitest.domain.Environment">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="project_id" jdbcType="BIGINT" property="projectId" />
+    <result column="environment_name" jdbcType="VARCHAR" property="environmentName" />
+    <result column="create_by" jdbcType="BIGINT" property="createBy" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_by" jdbcType="BIGINT" property="updateBy" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="del_flag" jdbcType="CHAR" property="delFlag" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.better.apitest.domain.Environment">
+    <result column="api_headers" jdbcType="LONGVARCHAR" property="apiHeaders" />
+    <result column="api_url_parameter" jdbcType="LONGVARCHAR" property="apiUrlParameter" />
+    <result column="init_variables" jdbcType="LONGVARCHAR" property="initVariables" />
+    <result column="variables_by_func" jdbcType="LONGVARCHAR" property="variablesByFunc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, project_id, environment_name, create_by, create_date, update_by, update_date, 
+    del_flag
+  </sql>
+  <sql id="Blob_Column_List">
+    api_headers, api_url_parameter, init_variables, variables_by_func
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_environment
+    where id = #{id,jdbcType=BIGINT}
+    and del_flag = 0
+  </select>
+
+  <select id="selectByProjectId" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_environment
+    where project_id = #{projectId,jdbcType=BIGINT}
+    and del_flag = 0
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_environment
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.better.apitest.domain.Environment">
+    insert into sys_environment (id, project_id, environment_name, 
+      create_by, create_date, update_by, 
+      update_date, del_flag, api_headers, 
+      api_url_parameter, init_variables, 
+      variables_by_func)
+    values (#{id,jdbcType=BIGINT}, #{projectId,jdbcType=BIGINT}, #{environmentName,jdbcType=VARCHAR}, 
+      #{createBy,jdbcType=BIGINT}, #{createDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=BIGINT}, 
+      #{updateDate,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=CHAR}, #{apiHeaders,jdbcType=LONGVARCHAR}, 
+      #{apiUrlParameter,jdbcType=LONGVARCHAR}, #{initVariables,jdbcType=LONGVARCHAR}, 
+      #{variablesByFunc,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.better.apitest.domain.Environment">
+    insert into sys_environment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="projectId != null">
+        project_id,
+      </if>
+      <if test="environmentName != null">
+        environment_name,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateBy != null">
+        update_by,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="delFlag != null">
+        del_flag,
+      </if>
+      <if test="apiHeaders != null">
+        api_headers,
+      </if>
+      <if test="apiUrlParameter != null">
+        api_url_parameter,
+      </if>
+      <if test="initVariables != null">
+        init_variables,
+      </if>
+      <if test="variablesByFunc != null">
+        variables_by_func,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="projectId != null">
+        #{projectId,jdbcType=BIGINT},
+      </if>
+      <if test="environmentName != null">
+        #{environmentName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="apiHeaders != null">
+        #{apiHeaders,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiUrlParameter != null">
+        #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="initVariables != null">
+        #{initVariables,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="variablesByFunc != null">
+        #{variablesByFunc,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.better.apitest.domain.Environment">
+    update sys_environment
+    <set>
+      <if test="projectId != null">
+        project_id = #{projectId,jdbcType=BIGINT},
+      </if>
+      <if test="environmentName != null">
+        environment_name = #{environmentName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        update_by = #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delFlag != null">
+        del_flag = #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="apiHeaders != null">
+        api_headers = #{apiHeaders,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiUrlParameter != null">
+        api_url_parameter = #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="initVariables != null">
+        init_variables = #{initVariables,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="variablesByFunc != null">
+        variables_by_func = #{variablesByFunc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.better.apitest.domain.Environment">
+    update sys_environment
+    set project_id = #{projectId,jdbcType=BIGINT},
+      environment_name = #{environmentName,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=BIGINT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=BIGINT},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      del_flag = #{delFlag,jdbcType=CHAR},
+      api_headers = #{apiHeaders,jdbcType=LONGVARCHAR},
+      api_url_parameter = #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      init_variables = #{initVariables,jdbcType=LONGVARCHAR},
+      variables_by_func = #{variablesByFunc,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.better.apitest.domain.Environment">
+    update sys_environment
+    set project_id = #{projectId,jdbcType=BIGINT},
+      environment_name = #{environmentName,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=BIGINT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=BIGINT},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      del_flag = #{delFlag,jdbcType=CHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.better.apitest.mapper.RequestMapper">
+  <resultMap id="BaseResultMap" type="com.better.apitest.domain.Request">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="test_case_id" jdbcType="BIGINT" property="testCaseId" />
+    <result column="main_type" jdbcType="INTEGER" property="mainType" />
+    <result column="db_config_id" jdbcType="BIGINT" property="dbConfigId" />
+    <result column="request_name" jdbcType="VARCHAR" property="requestName" />
+    <result column="request_method" jdbcType="VARCHAR" property="requestMethod" />
+    <result column="request_path" jdbcType="VARCHAR" property="requestPath" />
+    <result column="request_order" jdbcType="INTEGER" property="requestOrder" />
+    <result column="sleep_time" jdbcType="INTEGER" property="sleepTime" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="del_flag" jdbcType="BIT" property="delFlag" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.better.apitest.domain.Request">
+    <result column="sql_str" jdbcType="LONGVARCHAR" property="sqlStr" />
+    <result column="request_body" jdbcType="LONGVARCHAR" property="requestBody" />
+    <result column="api_assertions" jdbcType="LONGVARCHAR" property="apiAssertions" />
+    <result column="api_url_parameter" jdbcType="LONGVARCHAR" property="apiUrlParameter" />
+    <result column="api_variables" jdbcType="LONGVARCHAR" property="apiVariables" />
+    <result column="api_headers" jdbcType="LONGVARCHAR" property="apiHeaders" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, test_case_id, main_type, db_config_id, request_name, request_method, request_path, 
+    request_order, sleep_time, create_date, update_date, del_flag
+  </sql>
+  <sql id="Blob_Column_List">
+    sql_str, request_body, api_assertions, api_url_parameter, api_variables, api_headers
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_request
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="selectByCaseId" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_request
+    where test_case_id = #{id,jdbcType=BIGINT}
+    and del_flag = 0
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_request
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.better.apitest.domain.Request">
+    insert into sys_request (id, test_case_id, main_type, 
+      db_config_id, request_name, request_method, 
+      request_path, request_order, sleep_time, 
+      create_date, update_date, sql_str, 
+      request_body, api_assertions, api_url_parameter, 
+      api_variables, api_headers)
+    values (#{id,jdbcType=BIGINT}, #{testCaseId,jdbcType=BIGINT}, #{mainType,jdbcType=INTEGER}, 
+      #{dbConfigId,jdbcType=BIGINT}, #{requestName,jdbcType=VARCHAR}, #{requestMethod,jdbcType=VARCHAR}, 
+      #{requestPath,jdbcType=VARCHAR}, #{requestOrder,jdbcType=INTEGER}, #{sleepTime,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, #{sqlStr,jdbcType=LONGVARCHAR}, 
+      #{requestBody,jdbcType=LONGVARCHAR}, #{apiAssertions,jdbcType=LONGVARCHAR}, #{apiUrlParameter,jdbcType=LONGVARCHAR}, 
+      #{apiVariables,jdbcType=LONGVARCHAR}, #{apiHeaders,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.better.apitest.domain.Request">
+    insert into sys_request
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="testCaseId != null">
+        test_case_id,
+      </if>
+      <if test="mainType != null">
+        main_type,
+      </if>
+      <if test="dbConfigId != null">
+        db_config_id,
+      </if>
+      <if test="requestName != null">
+        request_name,
+      </if>
+      <if test="requestMethod != null">
+        request_method,
+      </if>
+      <if test="requestPath != null">
+        request_path,
+      </if>
+      <if test="requestOrder != null">
+        request_order,
+      </if>
+      <if test="sleepTime != null">
+        sleep_time,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="sqlStr != null">
+        sql_str,
+      </if>
+      <if test="requestBody != null">
+        request_body,
+      </if>
+      <if test="apiAssertions != null">
+        api_assertions,
+      </if>
+      <if test="apiUrlParameter != null">
+        api_url_parameter,
+      </if>
+      <if test="apiVariables != null">
+        api_variables,
+      </if>
+      <if test="apiHeaders != null">
+        api_headers,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="testCaseId != null">
+        #{testCaseId,jdbcType=BIGINT},
+      </if>
+      <if test="mainType != null">
+        #{mainType,jdbcType=INTEGER},
+      </if>
+      <if test="dbConfigId != null">
+        #{dbConfigId,jdbcType=BIGINT},
+      </if>
+      <if test="requestName != null">
+        #{requestName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestMethod != null">
+        #{requestMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="requestPath != null">
+        #{requestPath,jdbcType=VARCHAR},
+      </if>
+      <if test="requestOrder != null">
+        #{requestOrder,jdbcType=INTEGER},
+      </if>
+      <if test="sleepTime != null">
+        #{sleepTime,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sqlStr != null">
+        #{sqlStr,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="requestBody != null">
+        #{requestBody,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiAssertions != null">
+        #{apiAssertions,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiUrlParameter != null">
+        #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiVariables != null">
+        #{apiVariables,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiHeaders != null">
+        #{apiHeaders,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+  <insert id="foreachInsertSelective" parameterType="java.util.List">
+    <foreach collection="requestList" item="item" separator=",">
+      insert into sys_request
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="item.id != null">
+          id,
+        </if>
+        <if test="item.testCaseId != null">
+          test_case_id,
+        </if>
+        <if test="item.mainType != null">
+          main_type,
+        </if>
+        <if test="item.dbConfigId != null">
+          db_config_id,
+        </if>
+        <if test="item.requestName != null">
+          request_name,
+        </if>
+        <if test="item.requestMethod != null">
+          request_method,
+        </if>
+        <if test="item.requestPath != null">
+          request_path,
+        </if>
+        <if test="item.requestOrder != null">
+          request_order,
+        </if>
+        <if test="item.sleepTime != null">
+          sleep_time,
+        </if>
+        <if test="item.createDate != null">
+          create_date,
+        </if>
+        <if test="item.updateDate != null">
+          update_date,
+        </if>
+        <if test="item.sqlStr != null">
+          sql_str,
+        </if>
+        <if test="item.requestBody != null">
+          request_body,
+        </if>
+        <if test="item.apiAssertions != null">
+          api_assertions,
+        </if>
+        <if test="item.apiUrlParameter != null">
+          api_url_parameter,
+        </if>
+        <if test="item.apiVariables != null">
+          api_variables,
+        </if>
+        <if test="item.apiHeaders != null">
+          api_headers,
+        </if>
+      </trim>
+      <trim prefix="values (" suffix=")" suffixOverrides=",">
+        <if test="item.id != null">
+          #{item.id,jdbcType=BIGINT},
+        </if>
+        <if test="item.testCaseId != null">
+          #{item.testCaseId,jdbcType=BIGINT},
+        </if>
+        <if test="item.mainType != null">
+          #{item.mainType,jdbcType=INTEGER},
+        </if>
+        <if test="item.dbConfigId != null">
+          #{item.dbConfigId,jdbcType=BIGINT},
+        </if>
+        <if test="item.requestName != null">
+          #{item.requestName,jdbcType=VARCHAR},
+        </if>
+        <if test="item.requestMethod != null">
+          #{item.requestMethod,jdbcType=VARCHAR},
+        </if>
+        <if test="item.requestPath != null">
+          #{item.requestPath,jdbcType=VARCHAR},
+        </if>
+        <if test="item.requestOrder != null">
+          #{item.requestOrder,jdbcType=INTEGER},
+        </if>
+        <if test="item.sleepTime != null">
+          #{item.sleepTime,jdbcType=INTEGER},
+        </if>
+        <if test="item.createDate != null">
+          #{item.createDate,jdbcType=TIMESTAMP},
+        </if>
+        <if test="item.updateDate != null">
+          #{item.updateDate,jdbcType=TIMESTAMP},
+        </if>
+        <if test="item.sqlStr != null">
+          #{item.sqlStr,jdbcType=LONGVARCHAR},
+        </if>
+        <if test="item.requestBody != null">
+          #{item.requestBody,jdbcType=LONGVARCHAR},
+        </if>
+        <if test="item.apiAssertions != null">
+          #{item.apiAssertions,jdbcType=LONGVARCHAR},
+        </if>
+        <if test="item.apiUrlParameter != null">
+          #{item.apiUrlParameter,jdbcType=LONGVARCHAR},
+        </if>
+        <if test="item.apiVariables != null">
+          #{item.apiVariables,jdbcType=LONGVARCHAR},
+        </if>
+        <if test="item.apiHeaders != null">
+          #{item.apiHeaders,jdbcType=LONGVARCHAR},
+        </if>
+      </trim>
+    </foreach>
+  </insert>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.better.apitest.domain.Request">
+    update sys_request
+    <set>
+      <if test="testCaseId != null">
+        test_case_id = #{testCaseId,jdbcType=BIGINT},
+      </if>
+      <if test="mainType != null">
+        main_type = #{mainType,jdbcType=INTEGER},
+      </if>
+      <if test="dbConfigId != null">
+        db_config_id = #{dbConfigId,jdbcType=BIGINT},
+      </if>
+      <if test="requestName != null">
+        request_name = #{requestName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestMethod != null">
+        request_method = #{requestMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="requestPath != null">
+        request_path = #{requestPath,jdbcType=VARCHAR},
+      </if>
+      <if test="requestOrder != null">
+        request_order = #{requestOrder,jdbcType=INTEGER},
+      </if>
+      <if test="sleepTime != null">
+        sleep_time = #{sleepTime,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sqlStr != null">
+        sql_str = #{sqlStr,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="requestBody != null">
+        request_body = #{requestBody,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiAssertions != null">
+        api_assertions = #{apiAssertions,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiUrlParameter != null">
+        api_url_parameter = #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiVariables != null">
+        api_variables = #{apiVariables,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="apiHeaders != null">
+        api_headers = #{apiHeaders,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.better.apitest.domain.Request">
+    update sys_request
+    set test_case_id = #{testCaseId,jdbcType=BIGINT},
+      main_type = #{mainType,jdbcType=INTEGER},
+      db_config_id = #{dbConfigId,jdbcType=BIGINT},
+      request_name = #{requestName,jdbcType=VARCHAR},
+      request_method = #{requestMethod,jdbcType=VARCHAR},
+      request_path = #{requestPath,jdbcType=VARCHAR},
+      request_order = #{requestOrder,jdbcType=INTEGER},
+      sleep_time = #{sleepTime,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      sql_str = #{sqlStr,jdbcType=LONGVARCHAR},
+      request_body = #{requestBody,jdbcType=LONGVARCHAR},
+      api_assertions = #{apiAssertions,jdbcType=LONGVARCHAR},
+      api_url_parameter = #{apiUrlParameter,jdbcType=LONGVARCHAR},
+      api_variables = #{apiVariables,jdbcType=LONGVARCHAR},
+      api_headers = #{apiHeaders,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.better.apitest.domain.Request">
+    update sys_request
+    set test_case_id = #{testCaseId,jdbcType=BIGINT},
+      main_type = #{mainType,jdbcType=INTEGER},
+      db_config_id = #{dbConfigId,jdbcType=BIGINT},
+      request_name = #{requestName,jdbcType=VARCHAR},
+      request_method = #{requestMethod,jdbcType=VARCHAR},
+      request_path = #{requestPath,jdbcType=VARCHAR},
+      request_order = #{requestOrder,jdbcType=INTEGER},
+      sleep_time = #{sleepTime,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

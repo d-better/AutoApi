@@ -1,0 +1,243 @@
+2021-09-14 10:15:38.062 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 78861 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 10:15:38.066 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 10:15:38.136 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 10:15:38.136 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 10:15:39.203 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 10:15:39.205 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 10:15:39.228 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-09-14 10:15:39.846 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 10:15:39.855 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:15:39.855 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 10:15:39.855 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 10:15:39.911 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 10:15:39.911 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1774 ms
+2021-09-14 10:15:41.025 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 10:15:41.343 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 10:15:41.385 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:15:41.412 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 10:15:41.431 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 3.857 seconds (JVM running for 4.638)
+2021-09-14 10:15:41.436 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 10:15:41.439 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 10:16:38.974 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 10:31:12.573 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 88174 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 10:31:12.576 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 10:31:12.658 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 10:31:12.659 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 10:31:13.816 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 10:31:13.820 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 10:31:13.848 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021-09-14 10:31:14.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 10:31:14.619 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:31:14.620 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 10:31:14.620 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 10:31:14.683 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 10:31:14.685 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2025 ms
+2021-09-14 10:31:15.857 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 10:31:16.164 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 10:31:16.187 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:31:16.210 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 10:31:16.224 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 4.313 seconds (JVM running for 5.368)
+2021-09-14 10:31:16.230 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 10:31:16.231 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 10:31:57.478 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 10:31:57.480 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-09-14 10:31:57.487 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
+2021-09-14 10:31:57.523 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:31:57.524 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:31:57.525 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:31:57.525 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:32:03.367 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:32:03.369 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:32:03.370 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:32:03.370 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:34:11.071 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:34:11.079 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:34:11.080 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:34:11.081 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:35:35.303 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:35:35.309 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:35:35.309 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:35:35.309 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:35:38.792 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:35:38.794 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:35:38.795 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:35:38.795 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:38:54.029 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:38:54.036 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:38:54.036 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:38:54.037 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:44:21.659 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:44:21.662 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:44:21.662 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:44:21.662 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:46:12.260 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:46:12.265 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:46:12.265 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:46:12.265 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:46:13.605 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:46:13.606 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:46:13.607 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:46:13.607 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:46:16.733 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:46:16.734 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:46:16.735 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:46:16.736 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:48:28.909 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 10:51:13.490 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 780 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 10:51:13.513 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 10:51:13.608 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 10:51:13.608 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 10:51:14.685 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 10:51:14.687 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 10:51:14.715 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021-09-14 10:51:15.387 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 10:51:15.395 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:51:15.396 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 10:51:15.396 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 10:51:15.451 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 10:51:15.452 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1843 ms
+2021-09-14 10:51:16.681 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 10:51:17.028 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 10:51:17.053 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 10:51:17.075 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 10:51:17.097 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 4.36 seconds (JVM running for 6.886)
+2021-09-14 10:51:17.102 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 10:51:17.103 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 10:51:26.839 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 10:51:26.841 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-09-14 10:51:26.847 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 5 ms
+2021-09-14 10:51:26.881 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:51:26.882 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:51:26.883 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:51:26.883 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:59:08.763 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 10:59:08.776 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 10:59:08.776 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 10:59:08.776 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 10:59:49.389 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-09-14 10:59:51.079 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-09-14 10:59:51.108 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==>  Preparing: select id, user_name, name_cn, `password`, salt, locked, account, token, create_date from sys_user where user_name = ?
+2021-09-14 10:59:51.157 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==> Parameters: jingtian(String)
+2021-09-14 10:59:51.212 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==    Columns: id, user_name, name_cn, password, salt, locked, account, token, create_date
+2021-09-14 10:59:51.215 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==        Row: 75841144738680832, jingtian, 景天, e10adc3949ba59abbe56e057f20f883e, null, 0, QA, null, 2021-07-29 14:45:38
+2021-09-14 10:59:51.217 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m <==      Total: 1
+2021-09-14 10:59:51.221 INFO  com.better.apitest.service.impl.UserServiceImp    :51   [32m                  [0;39m 用户jingtian，登陆成功
+2021-09-14 10:59:51.222 INFO  com.better.apitest.service.impl.UserServiceImp    :53   [32m                  [0;39m 生成单点登录token：92816555259334656，并放入redis中
+2021-09-14 11:00:05.574 INFO  com.better.apitest.interceptor.LoginInterceptor   :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-09-14 11:00:05.581 INFO  com.better.apitest.interceptor.LoginInterceptor   :43   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8090/login
+2021-09-14 11:00:05.582 INFO  com.better.apitest.interceptor.LoginInterceptor   :47   [32m                  [0;39m 登录校验开始，token：null
+2021-09-14 11:00:05.583 INFO  com.better.apitest.interceptor.LoginInterceptor   :49   [32m                  [0;39m token为空，请求被拦截
+2021-09-14 11:00:12.508 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:00:12.512 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-09-14 11:00:12.523 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-09-14 11:00:20.022 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 6820 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 11:00:20.034 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 11:00:20.203 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:00:20.203 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:00:21.368 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 11:00:21.371 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 11:00:21.398 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021-09-14 11:00:22.159 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 11:00:22.168 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:00:22.168 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 11:00:22.168 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:00:22.238 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 11:00:22.239 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2035 ms
+2021-09-14 11:00:23.433 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:00:23.776 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 11:00:23.801 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:00:23.823 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 11:00:23.838 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 4.303 seconds (JVM running for 5.1)
+2021-09-14 11:00:23.845 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 11:00:23.846 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 11:00:27.554 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:00:27.556 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:00:27.561 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 5 ms
+2021-09-14 11:01:06.052 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:01:06.543 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 6820 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 11:01:06.544 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 11:01:06.898 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 11:01:06.900 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 11:01:06.905 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-09-14 11:01:07.049 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 11:01:07.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:01:07.051 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 11:01:07.051 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:01:07.064 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 11:01:07.064 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 502 ms
+2021-09-14 11:01:07.743 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:01:07.953 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 11:01:07.971 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:01:07.975 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 11:01:07.989 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 1.586 seconds (JVM running for 49.251)
+2021-09-14 11:01:08.010 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-09-14 11:01:08.014 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 11:01:08.017 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 11:01:09.486 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:01:09.785 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 6820 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 11:01:09.787 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 11:01:10.032 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 11:01:10.033 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 11:01:10.038 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-09-14 11:01:10.142 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 11:01:10.143 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:01:10.143 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 11:01:10.143 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:01:10.151 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 11:01:10.151 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 347 ms
+2021-09-14 11:01:10.408 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:01:10.579 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 11:01:10.596 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:01:10.600 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 11:01:10.606 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 0.973 seconds (JVM running for 51.87)
+2021-09-14 11:01:10.608 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-09-14 11:01:10.609 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 11:01:10.610 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 11:03:33.299 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:24:22.501 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 21204 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-14 11:24:22.504 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-14 11:24:22.572 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:24:22.572 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:24:23.490 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-14 11:24:23.492 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-14 11:24:23.521 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2021-09-14 11:24:24.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-14 11:24:24.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:24:24.117 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-14 11:24:24.117 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:24:24.184 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-14 11:24:24.185 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1612 ms
+2021-09-14 11:24:25.276 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:24:25.653 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-14 11:24:25.678 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-14 11:24:25.699 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-14 11:24:25.711 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 3.909 seconds (JVM running for 4.963)
+2021-09-14 11:24:25.715 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-14 11:24:25.716 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-14 11:39:58.939 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:39:58.949 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:39:58.981 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 32 ms
+2021-09-14 11:39:59.265 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-09-14 11:40:00.784 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-09-14 11:40:00.813 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==>  Preparing: select id, user_name, name_cn, `password`, salt, locked, account, token, create_date from sys_user where user_name = ?
+2021-09-14 11:40:00.857 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==> Parameters: jingtian(String)
+2021-09-14 11:40:00.942 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==    Columns: id, user_name, name_cn, password, salt, locked, account, token, create_date
+2021-09-14 11:40:00.946 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==        Row: 75841144738680832, jingtian, 景天, e10adc3949ba59abbe56e057f20f883e, null, 0, QA, null, 2021-07-29 14:45:38
+2021-09-14 11:40:00.949 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m <==      Total: 1
+2021-09-14 11:40:00.957 INFO  com.better.apitest.service.impl.UserServiceImp    :51   [32m                  [0;39m 用户jingtian，登陆成功
+2021-09-14 11:40:00.958 INFO  com.better.apitest.service.impl.UserServiceImp    :53   [32m                  [0;39m 生成单点登录token：92826662424678400，并放入redis中
+2021-09-14 11:40:09.141 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==>  Preparing: select id, user_name, name_cn, `password`, salt, locked, account, token, create_date from sys_user where user_name = ?
+2021-09-14 11:40:09.151 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m ==> Parameters: jingtian(String)
+2021-09-14 11:40:09.188 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==    Columns: id, user_name, name_cn, password, salt, locked, account, token, create_date
+2021-09-14 11:40:09.191 TRACE c.b.apitest.mapper.UserMapper.selectByUserName    :143  [32m                  [0;39m <==        Row: 75841144738680832, jingtian, 景天, e10adc3949ba59abbe56e057f20f883e, null, 0, QA, null, 2021-07-29 14:45:38
+2021-09-14 11:40:09.196 DEBUG c.b.apitest.mapper.UserMapper.selectByUserName    :137  [32m                  [0;39m <==      Total: 1
+2021-09-14 11:40:09.200 INFO  com.better.apitest.service.impl.UserServiceImp    :51   [32m                  [0;39m 用户jingtian，登陆成功
+2021-09-14 11:40:09.200 INFO  com.better.apitest.service.impl.UserServiceImp    :53   [32m                  [0;39m 生成单点登录token：92826696994131968，并放入redis中
+2021-09-14 12:14:22.822 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m21s738ms).
+2021-09-14 12:29:52.170 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s390ms).
+2021-09-14 12:40:33.073 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m10s892ms).
+2021-09-14 12:57:49.311 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m46s211ms).
+2021-09-14 13:05:26.010 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m36s702ms).
+2021-09-14 13:40:37.103 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 13:40:37.114 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-09-14 13:40:37.152 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.

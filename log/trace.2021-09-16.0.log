@@ -1,0 +1,41 @@
+2021-09-16 17:47:20.563 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 52914 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-16 17:47:20.569 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-16 17:47:20.651 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-16 17:47:20.651 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-16 17:47:22.100 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-16 17:47:22.103 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-16 17:47:22.128 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-09-16 17:47:22.796 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-16 17:47:22.804 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-16 17:47:22.805 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-16 17:47:22.805 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-16 17:47:22.866 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-16 17:47:22.866 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2214 ms
+2021-09-16 17:47:24.224 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-16 17:47:24.538 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-16 17:47:24.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8090"]
+2021-09-16 17:47:24.585 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-16 17:47:24.597 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 4.603 seconds (JVM running for 5.724)
+2021-09-16 17:47:24.602 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-16 17:47:24.603 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-16 17:47:28.028 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-16 17:47:45.056 INFO  com.better.apitest.config.ApiTestApplication      :55   [32m                  [0;39m Starting ApiTestApplication using Java 1.8.0_281 on wangdong.local with PID 53137 (/Users/admin/IdeaProject/ApiTest/target/classes started by admin in /Users/admin/IdeaProject/ApiTest)
+2021-09-16 17:47:45.059 INFO  com.better.apitest.config.ApiTestApplication      :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-16 17:47:45.140 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-16 17:47:45.141 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-16 17:47:46.064 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-16 17:47:46.066 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-16 17:47:46.091 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-09-16 17:47:46.762 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8090 (http)
+2021-09-16 17:47:46.774 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8090"]
+2021-09-16 17:47:46.775 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-16 17:47:46.775 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-16 17:47:46.870 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-16 17:47:46.874 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1731 ms
+2021-09-16 17:47:48.131 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-16 17:47:48.488 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-16 17:47:48.533 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8090 (http) with context path ''
+2021-09-16 17:47:48.545 INFO  com.better.apitest.config.ApiTestApplication      :61   [32m                  [0;39m Started ApiTestApplication in 4.088 seconds (JVM running for 5.045)
+2021-09-16 17:47:48.552 INFO  com.better.apitest.config.ApiTestApplication      :19   [32m                  [0;39m 启动成功！！
+2021-09-16 17:47:48.552 INFO  com.better.apitest.config.ApiTestApplication      :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8090
+2021-09-16 17:47:48.636 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
